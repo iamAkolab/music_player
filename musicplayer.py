@@ -20,3 +20,18 @@ for item in songlist:
 
 pygame.init()
 pygame.mixer.init()
+
+def play():
+    pygame.mixer.music.load(playlist.get(tkr.ACTIVE))
+    var.set(playlist.get(tkr.ACTIVE))
+    pygame.mixer.play()
+
+def ExitMusicPlayer():
+    pygame.mixer.music.stop()
+
+def pause():
+    pygame.mixer.music.pause()
+
+def unpause():
+    pygame.mixer.music.unpause()
+
