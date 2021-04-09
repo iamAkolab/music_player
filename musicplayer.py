@@ -4,9 +4,9 @@ from tkinter.filedialog import askdirectory
 import os
 
 
-musicplayer = tkr.TK()
+musicplayer = tkr.Tk()
 musicplayer.title("Music Player")
-musicplayer.geometry("450 x 350")
+musicplayer.geometry("450x350")
 
 directory = askdirectory()
 os.chdir(directory)
